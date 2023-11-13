@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">HelloApp</string>
+    <string name="button">Button</string>
+    <string name="quot_generate_otp_quot">Generate OTP</string>
+    <string name="quot_enter_otp_quot">Enter OTP</string>
+    <string name="valid">Verify</string>
+    <string name="welcome">WELCOME</string>
+    <string name="enter_your_number">Enter Your Number</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="resend_info">If you are not recieved OTP \nKindly CLICK RESEND BUTTON</string>
+    <string name="applications">Applications</string>
+    <string name="log_out">Log Out</string>
+    <string name="irctc">IRCTC</string>
+    <string name="youtube">Youtube</string>
+
+
+</resources>

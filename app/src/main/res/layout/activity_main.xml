@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#42A6AF"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_login"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="729dp"
+            android:layout_gravity="center"
+            android:background="#3A7E3B"
+            android:backgroundTint="#00C54949"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="160dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/welcome"
+                android:textAlignment="center"
+                android:textSize="46sp"
+                android:textStyle="bold"/>
+
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_login"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:hint="@string/enter_your_name"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textAlignment="center"
+                android:textColorHint="#000000"
+                android:textSize="28sp"
+                android:autofillHints=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="VisualLintTextFieldSize" />
+
+            <EditText
+                android:id="@+id/phn_number"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_login"
+                android:drawableLeft="@drawable/baseline_phone_24"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:hint="@string/enter_your_number"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:autofillHints=""
+                android:textAlignment="center"
+                android:textColorHint="#000000"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextFields,VisualLintTextFieldSize" />
+
+            <Button
+                android:id="@+id/getOTP"
+                android:layout_width="263dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/quot_generate_otp_quot"
+                android:textSize="26sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phn_number"
+                app:layout_constraintVertical_bias="0.8" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
